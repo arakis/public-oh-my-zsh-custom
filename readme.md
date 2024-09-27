@@ -12,3 +12,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --recursive https://github.com/arakis/public-oh-my-zsh-custom.git ~/.oh-my-zsh/custom
 ln -s ~/.oh-my-zsh/custom/zshrc ~/.zshrc
 ```
+
+Set ZSH as default shell:
+```
+sudo chsh -s /bin/zsh $USER
+```
