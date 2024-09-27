@@ -5,6 +5,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 rm -rf ~/.oh-my-zsh/custom
 git clone --recursive git@github.com:arakis/public-oh-my-zsh-custom.git ~/.oh-my-zsh/custom
 ln -sf ~/.oh-my-zsh/custom/zshrc ~/.zshrc
+exec zsh -l
 ```
 
 Clone via HTTPS:
@@ -13,6 +14,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 rm -rf ~/.oh-my-zsh/custom
 git clone --recursive https://github.com/arakis/public-oh-my-zsh-custom.git ~/.oh-my-zsh/custom
 ln -sf ~/.oh-my-zsh/custom/zshrc ~/.zshrc
+exec zsh -l
 ```
 
 Set ZSH as default shell:
