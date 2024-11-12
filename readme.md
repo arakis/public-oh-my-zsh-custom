@@ -1,3 +1,8 @@
+Pre-requisites:
+```sh
+apt-get update && apt-get install -y zsh git
+```
+
 Clone via SSH:
 
 ```sh
@@ -9,6 +14,7 @@ exec zsh -l
 ```
 
 Clone via HTTPS:
+
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 rm -rf ~/.oh-my-zsh/custom
