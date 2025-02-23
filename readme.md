@@ -1,6 +1,6 @@
 Pre-requisites:
 ```sh
-apt-get update && apt-get install -y zsh git
+sudo apt-get update && sudo apt-get install -y zsh git
 ```
 
 Clone via SSH:
