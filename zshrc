@@ -72,7 +72,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(history history-substring-search zsh-autosuggestions zsh-syntax-highlighting tmux ssh-agent gh aws)
+plugins=(history history-substring-search zsh-autosuggestions zsh-syntax-highlighting tmux ssh-agent gh aws yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -170,10 +170,13 @@ alias rm="${aliases[rm]:-rm} -i"
 alias df="df -h"
 
 source ~/.profile
-source <(broot --print-shell-function zsh)
+if command -v broot &> /dev/null; then
+  source <(broot --print-shell-function zsh)
+fi
 
 # unique history
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+HISTORY_SUBSTRING_SEARCH_FUZZY=1
 
 # if not set, paste breaks completion when using right arrow:
 # https://github.com/zsh-users/zsh-autosuggestions/issues/511
