@@ -168,6 +168,8 @@ alias rm="${aliases[rm]:-rm} -i"
 
 # custom alias
 alias df="df -h"
+alias msedit=ms-edit
+alias edit=ms-edit
 
 source ~/.profile
 if command -v broot &> /dev/null; then
